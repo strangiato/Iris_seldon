@@ -2,4 +2,4 @@ pandas
 seldon-core
 scikit-learn
 numpy
-pickle
+pickle-mixin
