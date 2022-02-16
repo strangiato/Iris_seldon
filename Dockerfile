@@ -13,4 +13,5 @@ ENV SERVICE_TYPE MODEL
 ENV ENV_MODEL_NAME Iris
 
 
-CMD exec seldon-core-microservice $MODEL_NAME --service-type $SERVICE_TYPE --http-port 8080
+CMD exec seldon-core-microservice $MODEL_NAME --service-type $SERVICE_TYPE 
+#--http-port 8080
