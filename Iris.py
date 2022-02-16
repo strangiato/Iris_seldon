@@ -5,7 +5,7 @@ class Iris:
   def __init__(self):
     self.model_name = "Iris"
     
-  def predict(self, X = [[5,3,1.6,0.2]], features_names=None):
+  def predict(self, X = [[5,3,1.6,0.2]], features_names=['sepal length', 'sepal width', 'petal length', 'petal width']):
     #logging.info(f"Got request {X} with features {features_names}")        
     df = pd.DataFrame(data=X)
     # load the model from disk
