@@ -13,5 +13,5 @@ class Iris:
     #result = loaded_model.score(X_test, Y_test)
     #print(result)
     model = pickle.load(open("finalized_model.sav", 'rb'))
-    pred = model.predict(X)
+    pred = model.predict(df)
     return pred
