@@ -4,6 +4,8 @@ import pickle
 class Iris:
   def __init__(self):
     self.model_name = "Iris"
+    model = pickle.load(open("finalized_model.sav", 'rb'))
+    pred = model.predict(df)
     
   def predict(self, X, features_names):
     #logging.info(f"Got request {X} with features {features_names}")        
@@ -12,6 +14,4 @@ class Iris:
     #loaded_model = pickle.load(open(filename, 'rb'))
     #result = loaded_model.score(X_test, Y_test)
     #print(result)
-    model = pickle.load(open("finalized_model.sav", 'rb'))
-    pred = model.predict(df)
     return pred
