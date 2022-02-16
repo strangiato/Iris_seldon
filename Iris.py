@@ -5,9 +5,9 @@ class Iris:
   def __init__(self):
     self.model_name = "Iris"
     
-  def predict(self, X = [[5,3,1.6,0.2]], features_names=['sepal length', 'sepal width', 'petal length', 'petal width']):
+  def predict(self, X, features_names):
     #logging.info(f"Got request {X} with features {features_names}")        
-    df = pd.DataFrame(data=X, columns=[features_names])
+    df = pd.DataFrame(data=X, columns=features_names)
     # load the model from disk
     #loaded_model = pickle.load(open(filename, 'rb'))
     #result = loaded_model.score(X_test, Y_test)
