@@ -4,4 +4,5 @@ kind: Kustomization
 namespace: seldon-demo
 
 resources:
+  - route.yaml
   - seldonDeployment.yaml
