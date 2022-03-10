@@ -9,8 +9,11 @@ spec:
         - spec:
             containers:
               - image: >-
-                  image-registry.openshift-image-registry.svc:5000/honda/iris-seldon
+                  image-registry.openshift-image-registry.svc:5000/seldon-test/iris-seldon
                 name: classifier
+                env:
+                  - name: LOG_LEVEL_ENV
+                    value: DEBUG
                 ports:
                   - containerPort: 6000
                     name: metrics
