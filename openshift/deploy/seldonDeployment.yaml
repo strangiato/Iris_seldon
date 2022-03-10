@@ -9,8 +9,12 @@ spec:
         - spec:
             containers:
               - image: >-
-                  image-registry.openshift-image-registry.svc:5000/seldon-demo/iris-seldon
+                  image-registry.openshift-image-registry.svc:5000/honda/iris-seldon
                 name: classifier
+                ports:
+                  - containerPort: 6000
+                    name: metrics
+                    protocol: TCP
       graph:
         children: []
         endpoint:
