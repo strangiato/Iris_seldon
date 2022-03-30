@@ -1,5 +1,5 @@
 pandas
-#seldon-core==1.7.0
+Werkzeug==2.0.3
 seldon-core==1.13.1
 scikit-learn
 numpy
