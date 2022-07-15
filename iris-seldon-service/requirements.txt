@@ -4,3 +4,4 @@ seldon-core==1.13.1
 scikit-learn
 numpy
 pickle-mixin
+werkzeug==2.0.3
