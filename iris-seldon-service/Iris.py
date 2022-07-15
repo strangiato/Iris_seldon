@@ -13,6 +13,7 @@ class Iris:
         df = pd.DataFrame(data=X, columns=features_names)
         
         pred = self.model.predict(df)
+        print(f"Returning prediction: {pred}")
         return pred
 
     def metrics(self):
