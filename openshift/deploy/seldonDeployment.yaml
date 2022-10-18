@@ -9,7 +9,7 @@ spec:
         - spec:
             containers:
               - image: >-
-                  image-registry.openshift-image-registry.svc:5000/seldon-test/iris-seldon
+                  image-registry.openshift-image-registry.svc:5000/seldon-demo/iris-seldon
                 name: classifier
                 env:
                   - name: LOG_LEVEL_ENV
