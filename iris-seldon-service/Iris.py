@@ -7,7 +7,7 @@ class Iris:
         self.model_name = "Iris"
 
         # load the model from disk
-        self.model = pickle.load(open("finalized_model.sav", "rb"))
+        self.model = pickle.load(open("finalized_model.pkl", "rb"))
 
     def predict(self, X, features_names):
         df = pd.DataFrame(data=X, columns=features_names)
